@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>happy diwali</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        h2 {
+            color: #fff;
+            position: relative;
+            margin-top: 60vh;
+            text-align: center;
+            letter-spacing: 0.2em;
+            font-size: 4em;
+            font-family: 'Mountains of Christmas';
+            text-shadow: 0px 0px 8px rgba(255, 65, 185, 1);
+        }
+
+        #wire {
+            text-align: center;
+            white-space: nowrap;
+            position: absolute;
+            padding: 0;
+            width: 100%;
+            top: -80px;
+            border-bottom: 7px solid #222;
+            height: 20vh;
+        }
+
+        #wire li {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 10vh;
+            top: 102px;
+            display: inline-block;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-name: even-flash;
+        }
+
+        #wire li:before {
+            content: "";
+            position: absolute;
+            width: 65px;
+            height: 70px;
+            border-radius: 4px;
+            top: -65px;
+            left: 15px;
+            background: #111;
+        }
+
+        @keyframes even-flash {
+
+            0%,
+            100% {
+                background: rgba(255, 230, 65, 1);
+                box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);
+            }
+
+            87.5% {
+                background: rgba(255, 230, 65, 0.5);
+                box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 0.3);
+            }
+
+            75% {
+                background: rgba(255, 65, 185, 1);
+                box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 1);
+            }
+
+            62.5% {
+                background: rgba(255, 65, 185, 0.5);
+                box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 0.3);
+            }
+
+            50% {
+                background: rgba(11, 179, 42, 1);
+                box-shadow: 0px 2px 20px 4px rgba(11, 179, 42, 1);
+            }
+
+            37.5% {
+                background: rgba(49, 117, 78, 0.5);
+                box-shadow: 0px 2px 20px 4px rgba(49, 117, 78, 0.5);
+            }
+
+            25% {
+                background: rgba(64, 7, 235, 1);
+                box-shadow: 0px 2px 20px 4px rgba(64, 7, 235, 1);
+            }
+
+            12.5% {
+                background: rgba(49, 45, 164, 0.5);
+                box-shadow: 0px 2px 20px 4px rgba(49, 45, 164, 0.5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="wire">
+        <li></li>
+    </ul>
+    <h2>Happy Diwali</h2>
+</body>
+
+</html>
